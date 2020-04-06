@@ -34,7 +34,7 @@ def save
     VALUES (?,?);
   SQL
   DB[:conn].execute(sql, self.name, self.grade)
-  @id = DB[:conn].execute("SELECT MAX (ID) AS last_idFROM students")[0][0]
+  @id = DB[:conn].execute("SELECT MAX (ID) AS last_id FROM students")[0][0]
   end
 end
 

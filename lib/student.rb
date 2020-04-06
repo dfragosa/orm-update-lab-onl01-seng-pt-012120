@@ -39,6 +39,6 @@ def save
 end
 
 def update
-  sql = ""
+  sql = "UPDATE students"
 end
 end

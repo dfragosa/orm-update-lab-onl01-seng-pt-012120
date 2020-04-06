@@ -39,7 +39,7 @@ def save
 end
 
 def self.create 
-  new_student = Student.new()
+  new_student = Student.new(name, grade)
 end 
 
 def update

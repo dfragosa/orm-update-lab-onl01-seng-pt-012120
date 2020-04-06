@@ -55,7 +55,7 @@ def self.find_by_name(name)
   WHERE name = ?
   LIMIT 1
   SQL
-  DB[:conn].execute.map do |row|
+  DB[:conn].execute(sql, name).map do |row|
     self.new_from_db(row)
   end.first
 end

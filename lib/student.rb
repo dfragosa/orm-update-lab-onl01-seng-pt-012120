@@ -30,6 +30,7 @@ def save
     INSERT INTO students(name, grade)
     VALUES (?,?)
   SQL
+  
 end
 
 end
